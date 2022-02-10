@@ -2,7 +2,7 @@ let fs = require('fs')
 let path = require('path')
 let fetch = require('node-fetch')
 let levelling = require('../lib/levelling')
-const thumb = fs.readFileSync('./src/thumb.jpg')
+const thumb = fs.readFileSync('./src/BayMax.jpg')
 let tags = {
   'main': 'MAIN',
   'info': 'INFO',
@@ -33,26 +33,25 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-
-╔═══════════════❀
-❀ 🕵️%name,
-╚═══════════════❀
-╔═══════════════❀
-🤖 Bot Name: BayMax (BOT)
-💬 Personal Chats: *${chats.length - groups.length}*
-🌐 Group Chats: *${groups.length}*
-🪀 Wa Web server Name: server Toshiro
-🥏 Wa Web Version: 10.0
+┏━━━━━━━━━━━━━━━━❀
+ Hello🕵️ %name,
+┗━━━━━━━━━━━━━━━━❀
+┏━━━━━━━━━━━━━━━━━❀
+🚀 Left: *%limit Limit*
+⚡ Role: *%role*
+🏮 Level: *%level* 
+🪀 Wa web Server: Baileys Toshiro
+🪀 Wa web version: 10.0
+👾 Prefix: *%p*
 📅 Date: *%week, %date*
-📱 Host Number: @918900351367
-╚═══════════════❀
-👇🏻 All usable commands are listed below 
-
+💻 Browser:Desktop
+📱 Host:@918981731437
+┗━━━━━━━━━━━━━━━━❀
 %readmore`.trimStart(),
-  header: ' *╔══❀❰･%category･❱❀═*',
-  body: '    ║☆ %cmd %islimit %isPremium',
-  footer: '.  ╚═══════════════❀  ',
-  after: ` *BayMax 0.1.1* 
+  header:'┏━━━━❀❰･%category･❱❀━━',
+  body: ' ┣☆ %cmd %islimit %isPremium',
+  footer:'┗━━━━━━━━━━━━━━━━❀ ',
+  after: ` *© copyright by Toshiro* 
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -151,7 +150,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.send2ButtonImg(m.chat, thumb, text.trim(), '© Copyright by Toshiro', '-owner', 'rules', '.rules', m)
+    conn.send2ButtonImg(m.chat, thumb, text.trim(), '', 'owner', '-owner', 'support', '.support', m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)
     throw e
