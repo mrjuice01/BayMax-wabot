@@ -160,7 +160,7 @@ conn.logger.level = 'debug'
 
 [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Toshi](https://github.com/ToshiroHitsugaya223.png?size=100)](https://github.com/ToshiroHitsugaya223/BayMax-wabot) 
 ----|----
-[Nurutomo](https://github.com/Nurutomo) | [Toshi](https://github.com/ToshiroHitsugaya223/BayMax-wabot) 
+[Nurutomo](https://github.com/Nurutomo) | [Toshi](https://github.com/ToshiroHitsugaya223) 
 Author / Creator | Editor
  
 
