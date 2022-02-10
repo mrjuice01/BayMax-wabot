@@ -3,6 +3,6 @@ let handler = async m => m.reply(`
 `.trim()) // repository
 handler.help = ['BayMax']
 handler.tags = ['info']
-handler.command = /^Toshiro|repo$/i
+handler.command = /^BayMax|repo$/i
 
 module.exports = handler
