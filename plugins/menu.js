@@ -39,8 +39,8 @@ const defaultMenu = {
 ╚═══════════════
 ╔═══════════════❀
 🤖 Bot Name: BayMax (BOT)
-💬 Personal Chats: 
-🌐 Group Chats:
+💬 Personal Chats:*${chats.length - groups.length}*
+🌐 Group Chats:*${groups.length}*
 🪀 Wa Web server Name: Server Toshiro
 🥏 Wa Web Version: 10.0
 💻 Browser: Desktop
