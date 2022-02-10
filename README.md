@@ -1,4 +1,4 @@
-# tokio
+# BayMax
 
 English version of wabot-aq
 
@@ -14,8 +14,8 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/ToshiroHitsugaya223/Xyz-wabot
-cd tokio-wabot
+git clone https://github.com/ToshiroHitsugaya223/BayMax-wabot
+cd BayMax-wabot
 npm install
 npm update
 ```
@@ -43,14 +43,14 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 
 ---------
 
-[ INSTALLING NODEJS & TOKIO-WABOT ]
+[ INSTALLING NODEJS & BAYMAX-WABOT ]
 
 ```bash
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/itsajaygaur/tokio-wabot
-cd tokio-wabot
+git clone https://github.com/ToshiroHitsugaya223/BayMax-wabot
+cd BayMax-wabot
 npm install
 npm update
 ```
@@ -65,8 +65,8 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/itsajaygaur/tokio-wabot
-cd tokio-wabot
+git clone https://github.com/ToshiroHitsugaya223/BayMax-wabot
+cd BayMax-wabot
 npm install
 npm update
 ```
@@ -158,9 +158,9 @@ conn.logger.level = 'debug'
 
 -------
 
-[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ajay](https://github.com/itsajaygaur.png?size=100)](https://github.com/itsajaygaur/tokio-wabot) 
+[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Toshi](https://github.com/ToshiroHitsugaya223.png?size=100)](https://github.com/ToshiroHitsugaya223/BayMax-wabot) 
 ----|----
-[Nurutomo](https://github.com/Nurutomo) | [Ajay](https://github.com/itsajaygaur/tokio-wabot) 
+[Nurutomo](https://github.com/Nurutomo) | [Toshi](https://github.com/ToshiroHitsugaya223/BayMax-wabot) 
 Author / Creator | Editor
  
 
@@ -168,7 +168,7 @@ Author / Creator | Editor
 
 Don't forget to give it a star 🌟
 
-Best regards: tokio
+Best regards: BayMax
 
 
 
