@@ -33,17 +33,16 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-
-🙏🏻 Namaste %name, how can i help you?
-
-🪵 Left: *%limit Limit*
-🎗️ Role: *%role*
-🛕 Level: *%level* 
-☕ Total XP: *%totalexp*
-
-〽️ Prefix: *%p*
-📅 Date: *%week, %date*
-
+┏━━━━━━━━━━━━━━━
+ 🕵️ Hello %name,
+┗━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━
+🤖 Bot Name: BayMax (BOT)
+🪀 Wa Web Name: Server Toshiro
+🥏 Wa web Version: 10.0
+💻 Browser: Desktop
+📱 Host Number: @918900351367
+┗━━━━━━━━━━━━━━━━
 👇🏻 All usable commands are listed below 
 
 %readmore`.trimStart(),
@@ -149,7 +148,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.send2ButtonImg(m.chat, thumb, text.trim(), 'owner', '-owner', 'rules', '.rules', m)
+    conn.send2ButtonImg(m.chat, thumb, text.trim(), 'BayMax', '-owner', 'rules', '.rules', m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)
     throw e
