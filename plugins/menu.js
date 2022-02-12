@@ -34,20 +34,20 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-┏━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━❀
  🕵️ Hello %name,
 ┗━━━━━━━━━━━━━━━
-┏━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━❀
 🤖 Bot Name: BayMax (BOT)
 🪀 Wa Web Name: Server Toshiro
 🥏 Wa web Version: 10.0
 💻 Browser: Desktop
 📱 Host Number: @918900351367
-┗━━━━━━━━━━━━━━━━
+┗━━━━━━━━━━━━━━━━❀
 👇🏻 All usable commands are listed below 
 
 %readmore`.trimStart(),
-  header:'┏━━━━❀❰･%category･❱❀━━',
+  header:'┏━━━━「 %category 」━━❀',
   body: ' ┣☆ %cmd %islimit %isPremium',
   footer:'┗━━━━━━━━━━━━━━━━❀ ',
   after: ` *© copyright by Toshiro*
