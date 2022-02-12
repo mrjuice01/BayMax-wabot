@@ -1,5 +1,5 @@
-let handler = async (m, { conn, args }) => {
-  if (!args[0]) throw 'Uhm...url nya mana?'
+let handler = async (m,Uhm... where's the url? { conn, args }) => {
+  if (!args[0]) throw '?'
   global.API('xteam', '/dl/', {
     url: args[0]
   }, 'APIKEY')
