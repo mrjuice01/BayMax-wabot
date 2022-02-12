@@ -44,8 +44,9 @@ const defaultMenu = {
 💻 Browser: Desktop
 📱 Host Number: @918900351367
 ┗━━━━━━━━━━━━━━━━❀
-👇🏻 All usable commands are listed below 
-
+┏━━━━━━━━━━━━━━━❀
+https://instagram.com/itz_toshiro12/
+┗━━━━━━━━━━━━━━━━❀
 %readmore`.trimStart(),
   header:'┏━━━━「 %category 」━━❀',
   body: ' ┣☆ %cmd %islimit %isPremium',
