@@ -1,28 +1,27 @@
 let { MessageType } = require('@adiwajshing/baileys')
- const cooldown = 86400000
+ const cooldown = 2592000000
  let handler = async(m, { conn }) => {
      let user = global.DATABASE._data.users[m.sender]
-     let __timers = (new Date - user.lastclaim)
-     let _timers = (cooldown - __timers)
+     let _timers = (cooldown - (new Date - user.lastmonthly))
      let timers = clockString(_timers)
-     if (new Date - user.lastclaim > cooldown) {
-         conn.reply(m.chat, `You have already claimed and got 1000 money and 1 potion`, m)
-         global.DATABASE._data.users[m.sender].money += 1000
-         global.DATABASE._data.users[m.sender].potion += 1
-         global.DATABASE._data.users[m.sender].lastclaim = new Date * 1
+     if (new Date - user.lastmonthly > cooldown) {
+         conn.reply(m.chat, `You have claimed and got 100000 money, 5 Legendary crate and 3 Pet crate`, m)
+         user.money += 100000
+         user.legendary += 5
+         user.pet += 3
+         user.lastmonthly = new Date * 1
      } else {
          let buttons = button(`please wait *🕒${timers}* again to be able to claim again`, user)
          conn.sendMessage(m.chat, buttons, MessageType.buttonsMessage, { quoted: m })
      }
  }
- handler.help = ['claim']
+ handler.help = ['monthly']
  handler.tags = ['rpg']
- handler.command = /^(claim|daily)$/i
+ handler.command = /^(monthly)$/i
 
  handler.cooldown = cooldown
 
  module.exports = handler
-
 
  function clockString(ms) {
      let h = Math.floor(ms / 3600000)
