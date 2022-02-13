@@ -39,15 +39,17 @@ const defaultMenu = {
 ┗━━━━━━━━━━━━━━━
 ┏━━━━━━━━━━━━━━━❀
 🤖 Bot Name: BayMax (BOT)
-🌐 Group Chat:*${groups.length}*
-💬 Personal Chat:*${groups.length - groupsIn.length}*
 🪀 Wa Web Name: Server Toshiro
 🥏 Wa web Version: 10.0
 💻 Browser: Desktop
 📱 Host Number: @918900351367
 ┗━━━━━━━━━━━━━━━━❀
 ┏━━━━━━━━━━━━━━━❀
-https://instagram.com/itz_toshiro12/
+    THANKS TO
+┗━━━━━━━━━━━━━━━❀
+┏━━━━━━━━━━━━━━━❀
+   💓 GARIOX 3D
+   💓 Kazukafu
 ┗━━━━━━━━━━━━━━━━❀
 %readmore`.trimStart(),
   header:'┏━━━━「 %category 」━━❀',
