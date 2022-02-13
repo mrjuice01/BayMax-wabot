@@ -1,7 +1,7 @@
 let handler  = async (m, { conn }) => {
 let name = conn.getName(m.sender)
 let teks = `
-${pickRandom([` *_Hello👋 @${m.sender.split`@`[0]}_\n\n_How are you😊*`])}
+${pickRandom([` *Hello👋 @${m.sender.split`@`[0]}_\n\n_How are you😊*`])}
 `.trim()
 conn.reply(m.chat, teks, m, { contextInfo: { mentionedJid: [m.sender] }})
 }
