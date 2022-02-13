@@ -9,7 +9,7 @@ let handler = async(m, { conn, command, text }) => {
      }
    } : { })
  }
- handler.help = ['gay', 'smart', 'beautiful', 'handsome', 'peat', 'crazy', 'lesbi', 'stress', 'bucin', 'jones', 'sadboy'].  map(v => 'how' + v + 'who?')
+ handler.help = ['gay', 'smart', 'beautiful', 'handsome', 'peat', 'crazy', 'lesbi', 'stress', 'bucin', 'jones', 'sadboy'].  map(v => 'how' + v + '?')
  handler.tags = ['shells']
  handler.command = /^how(gay|smart|beautiful|handsome|gabut|crazy|lesbi|stress?|bucin|jones|sadboy)/i
  handler.owner = false
