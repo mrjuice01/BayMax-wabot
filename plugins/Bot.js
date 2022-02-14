@@ -8,6 +8,6 @@ type: 'audioMessage', // force no convert in ffmpeg
 ptt: true // true above doesn't work, because it's forced without converting ;v
 })
 }
-handler.customPrefix = /Bot/i
+handler.customPrefix = /Bot|.help|/help|!help/i
 handler.command = new RegExp
 module.exports = handler
