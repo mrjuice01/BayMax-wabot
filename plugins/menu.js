@@ -155,6 +155,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     conn.send2ButtonImg(m.chat, thumb, text.trim(), '© copyright by Toshiro', '-owner', 'rules', '.rules', m)
+    conn.fakeReply(m.chat, '*BOT VERIFIED* ', '0@s.whatsapp.net', '*Toshiro BOT*')
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)
     throw e
