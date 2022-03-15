@@ -38,18 +38,12 @@ const defaultMenu = {
  🕵️ Hello %name,
 ┗━━━━━━━━━━━━━━━
 ┏━━━━━━━━━━━━━━━❀
-🤖 Bot Name: BayMax (BOT)
-🪀 Wa Web Name: Server Toshiro
-🥏 Wa web Version: 10.0
-💻 Browser: Desktop
-📱 Host Number: @918900351367
-┗━━━━━━━━━━━━━━━━❀
-┏━━━━━━━━━━━━━━━❀
-    THANKS TO
-┗━━━━━━━━━━━━━━━❀
-┏━━━━━━━━━━━━━━━❀
-   💓 GARIOX 3D
-   💓 Kazukafu
+🤖 Bot Name: *BayMax (BOT)*
+🪀 Wa Web Name: *Server Toshiro*
+🥏 Wa web Version: *10.0*
+🧮 Uptime: *%uptime (%muptime)*
+💻 Browser: *Desktop*
+📱 Host Number: *@917005149296*
 ┗━━━━━━━━━━━━━━━━❀
 %readmore`.trimStart(),
   header:'┏━━━━「 %category 」━━❀',
