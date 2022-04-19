@@ -34,23 +34,28 @@ const defaultMenu = {
 
 👋🏻(❤️ω❤️) Ohayō %name, how can i help you?
 
-🪵 Left: *%limit Limit*
-🎗️ Role: *%role*
-🛕 Level: *%level* 
-☕ Total XP: *%totalexp*
+➸ Left: *%limit Limit*
+➸ Role: *%role*
+➸ Level: *%level* 
+➸ Total XP: *%totalexp*
+➸ Prefix: *%p*
+➸ Uptime: *%uptime (%muptime)*
+➸ Database: *%rtotalreg of %totalreg*
 
-〽️ Prefix: *%p*
-⏰ Uptime: *%uptime (%muptime)*
-🎪 Database: *%rtotalreg of %totalreg*
-🏮 Github: github.com/itsajaygaur/tokio-wabot
+1. Bot Prefixes ─ (-)  (! , # , & , . , $)
+2. Don't Call Bot To Avoid Blocking.
+3. Consider to Read *-rules* First.
+4. Don't Spam Bot/Admin in Pm & Groups !
+5. Use -help index number to see the commands in the category.
 
-👇🏻 All usable commands are listed below 
-
+      ┏━━━━━━━━━━━━━━┓
+    ─❁┈[ Commands List ]┈❁─
+      ┗━━━━━━━━━━━━━━┛
 %readmore`.trimStart(),
-  header: '📺  *%category*',
-  body: ' 🪶 %cmd %islimit %isPremium',
-  footer: ' ',
-  after: `🌟 *Hope you're enjoying bot, have a great day* 
+  header:'┌──❁┈[*%category*]┈❁───',
+  body: ' ├➸ %cmd %islimit %isPremium',
+  footer:'└─────❁┈[*TOKIO*]┈❁───',
+  after: `🎉 *Have a Grate Hours 🎉* 
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
