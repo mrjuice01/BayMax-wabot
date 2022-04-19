@@ -49,7 +49,7 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/ToshiroHitsugaya223/BayMax-wabot
+git clone https://github.com/Toshiro223/BayMax-wabot
 cd BayMax-wabot
 npm install
 npm update
