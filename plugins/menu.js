@@ -1,13 +1,10 @@
 let fs = require('fs')
 let path = require('path')
-let fetch = require('node-fetch')
 let levelling = require('../lib/levelling')
-const thumb = fs.readFileSync('./src/thumb.jpg')
 let tags = {
   'main': 'MAIN',
-  'rpg': 'Epic RPG',
-  'game': 'GAME',
   'info': 'INFO',
+  'game': 'GAME',
   'xp': 'EXP & LIMIT',
   'sticker': 'STICKER',
   'admin': 'ADMIN',
@@ -34,22 +31,26 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-┏━━━━━━━━━━━━━━━❀
- 🕵️ Hello %name,
-┗━━━━━━━━━━━━━━━
-┏━━━━━━━━━━━━━━━❀
-🤖 Bot Name: *BayMax (BOT)*
-🪀 Wa Web Name: *Server Toshiro*
-🥏 Wa web Version: *10.0*
-🧮 Uptime: *%uptime (%muptime)*
-💻 Browser: *Desktop*
-📱 Host Number: *@917005149296*
-┗━━━━━━━━━━━━━━━━❀
+
+👋🏻(❤️ω❤️) Ohayō %name, how can i help you?
+
+🪵 Left: *%limit Limit*
+🎗️ Role: *%role*
+🛕 Level: *%level* 
+☕ Total XP: *%totalexp*
+
+〽️ Prefix: *%p*
+⏰ Uptime: *%uptime (%muptime)*
+🎪 Database: *%rtotalreg of %totalreg*
+🏮 Github: github.com/itsajaygaur/tokio-wabot
+
+👇🏻 All usable commands are listed below 
+
 %readmore`.trimStart(),
-  header:'┏━━━━「 %category 」━━❀',
-  body: ' ┣☆ %cmd %islimit %isPremium',
-  footer:'┗━━━━━━━━━━━━━━━━❀ ',
-  after: ` 
+  header: '📺  *%category*',
+  body: ' 🪶 %cmd %islimit %isPremium',
+  footer: ' ',
+  after: `🌟 *Hope you're enjoying bot, have a great day* 
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -148,8 +149,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.send2ButtonImg(m.chat, thumb, text.trim(), '© copyright by Toshiro', '-owner', 'rules', '.rules', m)
-    conn.fakeReply(m.chat, '*BOT VERIFIED* ', '0@s.whatsapp.net', '*I AM BAYMAX*')
+    conn.reply(m.chat, text.trim(), m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)
     throw e
